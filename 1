@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Travel</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-block">
+                <div class="burger-menu-block">
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="menu-block" id="menu-block">
+                    <a class="menu-item" href="#">Головна</a>
+                    <a class="menu-item" href="#">Про нас</a>
+                    <a class="menu-item" href="#">Картинки</a>
+                    <a class="menu-item" href="#">Зворотній зв'язок</a>
+                    <a class="menu-item" href="#">ЧаПи</a>
+                    <a class="menu-item" href="#">Лимон</a>
+                    <a class="menu-item" href="#">Апельсин</a>
+                    <a class="menu-item" href="#">Головна</a>
+                    <a class="menu-item" href="#">Про нас</a>
+                    <a class="menu-item" href="#">Картинки</a>
+                    <a class="menu-item" href="#">Зворотній зв'язок</a>
+                    <a class="menu-item" href="#">ЧаПи</a>
+                    <a class="menu-item" href="#">Лимон</a>
+                    <a class="menu-item" href="#">Апельсин</a>
+                </nav>
+                <form class="search-form" action="#" method="get">
+                    <input class="search-input" id="text-to-find" type="text" placeholder="search...">
+                    <div class="search">
+                        <img class="search-img" src="images/search.png" alt="">
+                    </div>
+                    <div class="search2" onclick="javascript: FindOnPage('text-to-find'); return false;">
+                        <img class="search-img" src="images/search.png" alt="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+     <main id="main">
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="item-content">
+                        <a class="content-icon" href="#">
+                            <img class="icon-icon" src="images/icon-1.png" alt="">
+                        </a>
+                    </div>
+                    <img class="item-img" src="images/nastia.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <a class="content-icon" href="#">
+                            <img class="icon-icon" src="images/icon-2.png" alt="">
+                        </a>
+                    </div>
+                    <img class="item-img" src="images/img-2.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">life in the countryside</p>
+                            <h2 class="content-title">Back on the countryside</h2>
+                            <p class="content-subtitle">It feels more like home, than the city,</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-3.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">eat, pray & love</p>
+                            <h2 class="content-title">Food Ninja</h2>
+                            <p class="content-subtitle">Everybody likes to eat.</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-4.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">keep exploring</p>
+                            <h2 class="content-title">Travel & Explore</h2>
+                            <p class="content-subtitle">I dream of travelling the stars</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid-item">
+                 <div class="item-content">
+                    <div class="item-content-wrap">
+                        <p class="content-suptitle">explore the unknown</p>
+                        <h2 class="content-title">I can see the sun shining like a diamond up high</h2>
+                        <p class="content-subtitle">The shells I find along the shore</p>
+                        <a class="content-btn" href="#">
+                            <img class="btn-icon" src="images/btn.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <img class="item-img" src="images/img-6.jpg" alt="">
+            </div>
+            <div class="grid-item">
+                <div class="item-content">
+                   <div class="item-content-wrap">
+                       <p class="content-suptitle">sunset wishes</p>
+                       <h2 class="content-title">Sunset is a pretty thing, so bathed in mystery</h2>
+                       <p class="content-subtitle">That fall so endlessly</p>
+                       <a class="content-btn" href="#">
+                           <img class="btn-icon" src="images/btn.png" alt="">
+                       </a>
+                   </div>
+               </div>
+               <img class="item-img" src="images/img-7.jpg" alt="">
+           </div>
+           <div class="grid-container2">
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">Hidden Gem</p>
+                            <h2 class="content-title">Deserted island</h2>
+                            <p class="content-subtitle">My heart is a deserted island, lost in a big ocean</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-8.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">soul food</p>
+                            <h2 class="content-title">Soul food</h2>
+                            <p class="content-subtitle">Nothin' like home cookin'</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-9.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <a class="content-icon" href="#">
+                            <img class="icon-icon" src="images/icon-1.png" alt="">
+                        </a>
+                    </div>
+                    <img class="item-img" src="images/img-10.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <a class="content-icon" href="#">
+                            <img class="icon-icon" src="images/icon-1.png" alt="">
+                        </a>
+                    </div>
+                    <img class="item-img" src="images/img-11.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">you & culture</p>
+                            <h2 class="content-title">Closer with culture</h2>
+                            <p class="content-subtitle">Two cultures worlds apart</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-13.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="item-content">
+                        <div class="item-content-wrap">
+                            <p class="content-suptitle">experience nature</p>
+                            <h2 class="content-title">Learning to kayak</h2>
+                            <p class="content-subtitle">Splish splash splish splash</p>
+                            <a class="content-btn" href="#">
+                                <img class="btn-icon" src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="item-img" src="images/img-12.jpg" alt="">
+                </div>
+           </div>
+           <div class="grid-item">
+                <div class="item-content">
+                    <div class="item-content-wrap">
+                        <p class="content-suptitle">relax & enjoy life</p>
+                        <h2 class="content-title">Take a leave from regular life</h2>
+                        <p class="content-subtitle">Go have some genuine fun</p>
+                        <a class="content-btn" href="#">
+                            <img class="btn-icon" src="images/btn.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <img class="item-img" src="images/img-14.jpg" alt="">
+            </div>
+            <div class="loader-wrap">
+                <img class="loader" src="images/loader.gif" alt="">
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
