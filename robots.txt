@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://slots.gamer.gd/sitemap.xml
