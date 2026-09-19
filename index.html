@@ -82,7 +82,8 @@
       z-index: 20;
       background: rgba(3, 11, 24, .78);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, .05)
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+      transition: transform 0.3s ease;
     }
 
     .nav {
@@ -177,11 +178,18 @@
       border: 1px solid #91C9FF;
       border-radius: 30px;
       padding: 0 20px;
+      background: linear-gradient(180deg, rgba(145, 201, 255, .05), rgba(145, 201, 255, .02));
     }
-       
+
     .hero-intro h2 {
-      font-size: 28px;     
+      font-size: 28px;
       color: #91C9FF;
+    }
+
+    .hero-intro p {
+      margin: 0 auto 30px;
+      max-width: 600px;
+      text-align: center;
     }
 
     .hero-grid {
@@ -557,11 +565,19 @@
       border: 1px solid #17355f
     }
 
+    .social a img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+
     .legal {
       margin-top: 22px;
       color: #7890aa;
       font-size: 12px;
-      line-height: 1.6
+      line-height: 1.6;
+      text-align: center;
     }
 
     @media (max-width: 900px) {
@@ -672,7 +688,7 @@
     <div class="container nav">
       <a class="brand" href="https://cutt.ly/kraken-casino"><img src="kraken.PNG" alt="Kraken Casino"></a>
       <nav class="navlinks">
-        <a href="https://cutt.ly/kraken-casino">Bonuses</a>
+        <a href="#bonuses">Bonuses</a>
         <a href="#games">Games</a>
         <a href="#benefits">Benefits</a>
         <a href="#faq">FAQ</a>
@@ -865,7 +881,12 @@
           <a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a><a href="#">Responsible Gaming</a><a
             href="#faq">FAQ</a><a href="#">Contact</a>
         </div>
-        <div class="social"><a href="#">✈</a><a href="#">◎</a><a href="#">▶</a></div>
+        <div class="social">
+          <a href="https://t.me/no_deposit_bonuses" target="_blank"><img src="images/telegram-logo.webp" alt="tg"></a>
+          <a href="https://x.com/SlotsGamerico" target="_blank"><img src="images/x-logo.svg" alt="x"></a>
+          <a href="https://www.facebook.com/profile.php?id=61594663974503" target="_blank"><img
+              src="images/facebook-logo.svg" alt="fb"></a>
+        </div>
       </div>
       <div class="legal">18+. Gambling can be addictive. The information on this page is promotional and informational.
         Check bonus terms, age restrictions and offer availability directly on the operator’s website.</div>
@@ -882,6 +903,24 @@
     });
   </script>
 
+  <script>
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScroll) {
+        // Скролимо вниз — ховаємо header
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        // Скролимо вгору — показуємо header
+        header.style.transform = 'translateY(0)';
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
 
   <!-- // setTimeout(function () {
   // window.location.replace("https://cutt.ly/kraken-casino");
